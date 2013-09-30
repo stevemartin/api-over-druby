@@ -1,5 +1,6 @@
 class ApiEndpoint
 
+  # authors
   def author_class
     Author
   end
@@ -11,7 +12,6 @@ class ApiEndpoint
   def author_json( id )
     Author.find( id ).to_json
   end
-
 
   def authors
     Author.all
@@ -25,6 +25,7 @@ class ApiEndpoint
     JSON.parse( Author.all.to_json )
   end
 
+  # books
   def book( id )
     Book.find( id )
   end
@@ -37,7 +38,6 @@ class ApiEndpoint
   def book_json( id )
     Book.find( id ).to_json
   end
-
 
   def books
     Book.all

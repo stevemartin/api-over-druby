@@ -1,28 +1,21 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* rake db:migrate
+* rake db:seed
+* rake drb:api_server
 
-Things you may want to cover:
+Then open up another console ( or tmux window ) and navigate to the root of this app, then in the console, do...
 
-* Ruby version
+    rails c
+    require 'drb_client'
+    @api_client.author_class
+    @api_client.author( 1 )
+    @api_client.author_json( 1 )
+    @api_client.authors_json
+    @api_client.authors_hash
 
-* System dependencies
+    etc ...
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TA DA!! JSON API OVER DRB!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
