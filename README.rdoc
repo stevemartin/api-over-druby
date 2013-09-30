@@ -4,7 +4,17 @@
 * rake db:seed
 * rake drb:api_server
 
-Then open up another console ( or tmux window ) and navigate to the root of this app, then in the console, do...
+Then open up another console ( or tmux window ) and navigate to the root of this app, then in the console, either do...
+
+    irb
+    require './lib/drb_client'
+    @api_client.authors_hash
+    @api_client.authors_json
+    @api_client.author_hash( 1 )
+    @api_client.author_json( 1 )
+
+    @api_client.books_hash
+    @api_client.books_json
 
     rails c
     require 'drb_client'
@@ -16,6 +26,6 @@ Then open up another console ( or tmux window ) and navigate to the root of this
 
     etc ...
 
-TA DA!! JSON API OVER DRB!
+TA DA!! API OVER DRB!
 
 
