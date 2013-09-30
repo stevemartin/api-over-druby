@@ -16,6 +16,8 @@ Then open up another console ( or tmux window ) and navigate to the root of this
     @api_client.books_hash
     @api_client.books_json
 
+Or:
+
     rails c
     require 'drb_client'
     @api_client.author_class
