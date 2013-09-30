@@ -28,6 +28,7 @@ Or:
 
     etc ...
 
-TA DA!! API OVER DRB!
+TA DA!! API OVER DRB! No need for layers of HTTP endpoints, just use the ApiEndpoints methods directly.
+No need for crazy auth. Just my nice ApiObject
 
 
